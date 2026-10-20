@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Es Azzaidut</title>
+    <!-- Menghubungkan Google Fonts untuk huruf Baloo 2 dan Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGASI -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">KEDAI ES AZZAIDUT</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">Menu</button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#produk">Produk</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- BAGIAN BERANDA -->
+        <section id="beranda" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Minuman Es</span>
+                    <h1>KEDAI ES AZZAIDUT</h1>
+                    <p class="hero-desc">Nikmati kesegaran minuman rumahan yang nikmat dan menyegarkan hari-hari kamu bersama keluarga dan teman sekolah!</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/6285785024987?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Kedai%20Es%20Azzaidut." class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+                        <a href="#produk" class="btn btn-secondary">Lihat Produk</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="utama.jpeg" alt="Minuman segar Kedai Es Azzaidut">
+                </div>
+            </div>
+            <!-- 3 Fakta Singkat -->
+            <div class="container">
+                <div class="fakta-grid">
+                    <div class="fakta-card">
+                        <h3>3 Bulan</h3>
+                        <p>Sekitar 3 bulan di Singosari</p>
+                    </div>
+                    <div class="fakta-card">
+                        <h3>6 Varian</h3>
+                        <p>6 varian minuman pilihan</p>
+                    </div>
+                    <div class="fakta-card">
+                        <h3>Alami</h3>
+                        <p>Tanpa pengawet buatan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN TENTANG USAHA -->
+        <section id="tentang" class="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Tentang Usaha</h2>
+                </div>
+                <div class="about-content">
+                    <p>Kedai Es Azzaidut dikelola oleh Mbak Farida dan telah berjalan sekitar 3 bulan dengan dibantu oleh 1 orang karyawan. Kami hadir untuk melayani masyarakat sekitar, tetangga, serta anak-anak sekolah yang ingin menikmati sajian minuman berkualitas rumahan.</p>
+                    <div class="keunggulan-box">
+                        <h3>Keunggulan Kami</h3>
+                        <p>Cocok untuk musim panas guna menyegarkan suasana dengan minuman yang segar dan disukai orang-orang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN PRODUK -->
+        <section id="produk" class="product-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Produk Kami</h2>
+                    <p class="product-note">Harga per kemasan. wilayah Lawang.</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Produk 1 -->
+                    <div class="product-card">
+                        <img src="minuman-1.jpeg" alt="Es Sticky">
+                        <div class="product-body">
+                            <h3>Es Sticky</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Minuman segar khas Azzaidut dengan cita rasa manis yang pas.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp5.000</span>
+                                <button class="btn btn-pesan" data-product="Es Sticky">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 2 -->
+                    <div class="product-card">
+                        <img src="minuman-2.jpeg" alt="Es Thai">
+                        <div class="product-body">
+                            <h3>Es Thai</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Teh ala Thailand dengan perpaduan susu yang gurih dan menyegarkan.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp6.000</span>
+                                <button class="btn btn-pesan" data-product="Es Thai">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 3 -->
+                    <div class="product-card">
+                        <img src="minuman-3.jpeg" alt="Es Rempah Original">
+                        <div class="product-body">
+                            <h3>Es Rempah Original</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Minuman dingin kaya rempah pilihan yang menghangatkan sekaligus menyegarkan.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp4.000</span>
+                                <button class="btn btn-pesan" data-product="Es Rempah Original">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 4 -->
+                    <div class="product-card">
+                        <img src="minuman-4.jpeg" alt="Es Rempah Latte">
+                        <div class="product-body">
+                            <h3>Es Rempah Latte</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Perpaduan rempah asli nusantara dengan sentuhan susu lembut.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp5.000</span>
+                                <button class="btn btn-pesan" data-product="Es Rempah Latte">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 5 -->
+                    <div class="product-card">
+                        <img src="minuman-5.jpeg" alt="Es Teh Tarik">
+                        <div class="product-body">
+                            <h3>Es Teh Tarik</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Teh tarik nikmat disajikan dingin untuk menemani waktu santai kamu.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp5.000</span>
+                                <button class="btn btn-pesan" data-product="Es Teh Tarik">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produk 6 -->
+                    <div class="product-card">
+                        <img src="minuman-6.jpeg" alt="Wedang Rempah">
+                        <div class="product-body">
+                            <h3>Wedang Rempah</h3>
+                            <p class="product-berat">Kemasan standar</p>
+                            <p class="product-desc">Minuman tradisional kaya manfaat untuk menjaga kesehatan tubuh.</p>
+                            <div class="product-footer">
+                                <span class="price">Rp4.000</span>
+                                <button class="btn btn-pesan" data-product="Wedang Rempah">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN KONTAK DAN LOKASI -->
+        <section id="kontak" class="contact-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Kontak dan Lokasi</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Informasi Kedai</h3>
+                        <p><strong>Alamat:</strong> Jl. Pandowo No.300, Kec Lawang, Kabupaten Malang</p>
+                        <p><strong>WhatsApp:</strong> 0857-8502-4987</p>
+                        <a href="https://wa.me/6285785024987?text=Halo%2C%20saya%20ingin%20menghubungi%20Kedai%20Es%20Azzaidut." class="btn btn-primary" target="_blank" rel="noopener">Chat WhatsApp</a>
+                        
+                        <div class="jam-buka-box">
+                            <h4>Jam Buka</h4>
+                            <table class="jam-table">
+                                <tr>
+                                    <td>Setiap Hari</td>
+                                    <td>Pukul 10.00 WIB</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="sosmed-box">
+                            <h4>Media Sosial</h4>
+                            <p>(Hubungi kami via WhatsApp)</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <!-- TEMPEL KODE IFRAME GOOGLE MAPS DI SINI -->
+                        <div class="map-placeholder">
+                            <p>Peta Lokasi Kedai Es Azzaidut</p>
+                        </div class="map-box" id="mapContainer">
+                        <iframe 
+                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15810.13453890123!2d112.686523!3d-7.839821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62a0a2f5a3a0f%3A0x4027a76e352e0c0!2sLawang%2C%20Kec.%20Lawang%2C%20Kabupaten%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                             width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            eferrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div style="padding:1rem;color:#666;">Memuat Peta...</div>
+                        <a href="https://maps.app.goo.gl/Rd2CjdnnxQyZ19Ko8" class="btn btn-secondary map-btn" target="_blank" rel="noopener">Buka di Google Maps</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>KEDAI ES AZZAIDUT</p>
+        </div>
+    </footer>
+
+    <!-- TOMBOL WHATSAPP MELAYANG -->
+    <a href="https://wa.me/6285785024987?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Kedai%20Es%20Azzaidut." class="floating-wa" id="floatingWa" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+        💬
+    </a>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
